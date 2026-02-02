@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThucHanh01_Bai4</title>
+</head>
+<style>
+    form { width: 700px; }
+
+.row { display: flex; margin-bottom: 10px; }
+
+label { width: 150px; margin-right: 5px; }
+
+input, select, textarea, span { width: 300px; }
+
+textarea {height: 100px;}
+
+input[type="radio"]{ width: auto;}
+
+</style>
+<body>
+    <h3>Basic info</h3>
+    <hr>
+    <form>
+        <div class="row">
+            <label>Employee ID</label>
+            <td>9</td>
+        </div>
+        <div class="row">
+            <label>Last Name</label>
+            <td>Dodsworth</td>
+        </div>
+        <div class="row">
+            <label>First Name</label>
+            <input type="text" value="Anne">
+        </div>
+        <div class="row">
+            <label>Gender</label>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+            <input type="radio" name="Gender">XXX
+            <input type="radio" name="Gender" checked>ZZZ
+        </div>
+        <div class="row">
+            <label>Title</label>
+            <input type="text" value="Sales Representative">
+        </div>
+        <div class="row">
+            <label>Suffix</label>
+            <input type="text" value="Ms.">
+        </div>
+        <div class="row">
+            <label>BirthDate</label>
+            <input type="text" value="1969-07-02 00:00:00">
+        </div>
+        <div class="row">
+            <label>HireDate</label>
+            <input type="text" value="1994-11-15 00:00:00">
+        </div>
+        <div class="row">
+            <label>SSN # (if applicable)</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label>Reports To</label>
+            <select>
+                <option>Buchanan</option>
+            </select>
+        </div>
+    </form>
+    <h3>Contact info</h3>
+    <hr>
+    <form>
+        <div class="row">
+            <label>Email</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label>Address</label>
+            <input type="text" value="7 Houndstooth Rd.">
+        </div>
+        <div class="row">
+            <label>City</label>
+            <input type="text" value="London">
+        </div>
+        <div class="row">
+            <label>Region</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label>Postal Code</label>
+            <input type="text" value="WG2 7LT">
+        </div>
+        <div class="row">
+            <label>Country</label>
+            <select>
+                <option>Russian Federation</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>US Home Phone</label>
+            <input type="text" value="(234)234-2342">
+        </div>
+        <div class="row">
+            <label>Photo</label>
+            <input type="text" value="EmpID9.bmp">
+        </div>
+    </form>
+    <h3>Optional info</h3>
+    <hr>
+    <form>
+        <div class="row">
+            <label>Notes</label>
+            <textarea></textarea>
+        </div>
+        <div class="row">
+            <label>Prefered Shift</label>
+            <input type="radio" name="Shift">Regular
+            <input type="radio" name="Shift">Gravy Yard
+        </div>
+        <div class="row">
+            <label>Active?</label>
+            <input type="radio">
+        </div>
+        <div class="row">
+            <label>Are you human?</label>
+            <input type="radio">
+        </div>
+        <div class="row">
+            <button>Submit</button>
+            <button>Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
